@@ -22,13 +22,17 @@ requirejs.config({
     , urlArgs: 'bust=' + (new Date()).getTime()
 });
 
-require([    'models/models',
+require([
+    'models/models',
     'views/header',
     'views/about',
     'views/winelist',
     'views/winedetails',
     'views/paginator',
-    'utils', 'bootstrap', 'memorystore'], function() {
+    'utils', 
+    'bootstrap', 
+    'memorystore'
+], function() {
 
 
 var AppRouter = Backbone.Router.extend({
