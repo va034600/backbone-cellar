@@ -1,3 +1,12 @@
+define(['jQuery',
+    'underscore',
+    'backbone'
+], function($, _, Backbone) {
+
+
+
+
+
 window.utils = {
 
     // Asynchronously load templates located in separate .html files
@@ -72,3 +81,7 @@ window.utils = {
     }
 
 };
+
+
+
+});

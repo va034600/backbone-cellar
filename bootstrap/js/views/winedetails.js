@@ -1,3 +1,9 @@
+define(['jQuery',
+    'underscore',
+    'backbone'
+], function($, _, Backbone) {
+    
+    
 window.WineView = Backbone.View.extend({
 
     initialize: function () {
@@ -94,5 +100,11 @@ window.WineView = Backbone.View.extend({
         };
         reader.readAsDataURL(this.pictureFile);
     }
+
+});
+
+
+
+
 
 });

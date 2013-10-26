@@ -1,3 +1,12 @@
+define(['jQuery',
+    'underscore',
+    'backbone'
+], function($, _, Backbone) {
+
+
+
+
+
 window.WineListView = Backbone.View.extend({
 
     initialize: function () {
@@ -37,5 +46,9 @@ window.WineListItemView = Backbone.View.extend({
         $(this.el).html(this.template(this.model.toJSON()));
         return this;
     }
+
+});
+
+
 
 });

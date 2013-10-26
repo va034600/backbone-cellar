@@ -1,3 +1,9 @@
+define(['jQuery',
+    'underscore',
+    'backbone'
+], function($, _, Backbone) {
+
+
 // The in-memory Store. Encapsulates logic to access wine data.
 window.store = {
 
@@ -305,3 +311,9 @@ Backbone.sync = function (method, model, options) {
         options.error("Record not found");
     }
 };
+
+
+
+
+
+});

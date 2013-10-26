@@ -1,3 +1,11 @@
+define(['jQuery',
+    'underscore',
+    'backbone'
+], function($, _, Backbone) {
+
+
+
+
 window.Wine = Backbone.Model.extend({
 
     urlRoot: "api/wines",
@@ -56,5 +64,8 @@ window.WineCollection = Backbone.Collection.extend({
     model: Wine,
 
     url: "api/wines"
+
+});
+
 
 });

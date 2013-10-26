@@ -1,3 +1,9 @@
+define(['jQuery',
+    'underscore',
+    'backbone'
+], function($, _, Backbone) {
+    
+    
 window.HeaderView = Backbone.View.extend({
 
     initialize: function () {
@@ -15,5 +21,8 @@ window.HeaderView = Backbone.View.extend({
             $('.' + menuItem).addClass('active');
         }
     }
+
+});
+
 
 });

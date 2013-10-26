@@ -1,3 +1,36 @@
+requirejs.config({
+    baseUrl: './js',
+    shim: {
+	'jQuery': {exports: '$'},
+	'underscore': {exports: '_'},
+	'backbone': {
+	    deps: ['underscore', 'jQuery'],
+	    exports: 'Backbone'
+	},
+	'bootstrap': {
+	    deps: ['jQuery'],
+	    exports: 'bootstrap'
+	}
+    },
+    paths: {
+	'jQuery': '../lib/jquery-1.7.2.min',
+	'underscore': '../lib/underscore-min',
+	'backbone': '../lib/backbone-min',
+	'bootstrap': '../lib/bootstrap'
+    }
+
+    , urlArgs: 'bust=' + (new Date()).getTime()
+});
+
+require([    'models/models',
+    'views/header',
+    'views/about',
+    'views/winelist',
+    'views/winedetails',
+    'views/paginator',
+    'utils', 'bootstrap', 'memorystore'], function() {
+
+
 var AppRouter = Backbone.Router.extend({
 
     routes: {
@@ -46,7 +79,11 @@ var AppRouter = Backbone.Router.extend({
 
 });
 
-utils.loadTemplate(['HeaderView', 'WineView', 'WineListItemView', 'AboutView'], function() {
+window.utils.loadTemplate(['HeaderView', 'WineView', 'WineListItemView', 'AboutView'], function() {
     app = new AppRouter();
     Backbone.history.start();
+});
+
+
+
 });

@@ -1,3 +1,10 @@
+define(['jQuery',
+    'underscore',
+    'backbone'
+], function($, _, Backbone) {
+
+
+
 window.Paginator = Backbone.View.extend({
 
     className: "pagination pagination-centered",
@@ -21,4 +28,6 @@ window.Paginator = Backbone.View.extend({
 
         return this;
     }
+});
+
 });
