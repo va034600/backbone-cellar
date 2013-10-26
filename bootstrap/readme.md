@@ -19,3 +19,5 @@ To use the app with the persistent RESTful back-end, set up the database as docu
 	mysql cellar -uroot < cellar.sql
 
 Your feedback is appreciated. Please post your questions and comments in the blog post referenced above.
+
+requirejsを使うように変更しました。
