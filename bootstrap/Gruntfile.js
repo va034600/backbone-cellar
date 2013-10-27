@@ -10,7 +10,11 @@ module.exports = function(grunt) {
 		    name: 'main',
 		    baseUrl: "./js",
 		    mainConfigFile: './js/main.js',
-		    out: "./build/main.min.js"
+		    out: "./build/main.min.js",
+		    // ソースマップ対応
+		    optimize: "uglify2",
+		    generateSourceMaps: true,
+		    preserveLicenseComments: false,
 		}
 	    }
 	}
