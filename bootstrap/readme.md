@@ -21,5 +21,7 @@ To use the app with the persistent RESTful back-end, set up the database as docu
 Your feedback is appreciated. Please post your questions and comments in the blog post referenced above.
 
 requirejsを使うように変更しました。
+
 grunt経由のr.jsを使ってビルド、最適化にしました。
+
 (SourceMapにも対応)
