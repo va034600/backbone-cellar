@@ -17,12 +17,9 @@ requirejs.config({
 	'underscore': '../lib/underscore-min',
 	'backbone': '../lib/backbone-min',
 	'bootstrap': '../lib/bootstrap'
-    }
-
-    , urlArgs: 'bust=' + (new Date()).getTime()
-});
-
-require([
+    },
+    
+    deps:[
     'models/models',
     'views/header',
     'views/about',
@@ -32,6 +29,12 @@ require([
     'utils', 
     'bootstrap', 
     'memorystore'
+    ]
+
+    , urlArgs: 'bust=' + (new Date()).getTime()
+});
+
+require([
 ], function() {
 
 
