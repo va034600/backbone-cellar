@@ -18,8 +18,11 @@ requirejs.config({
 	'backbone': '../lib/backbone-min',
 	'bootstrap': '../lib/bootstrap'
     },
-    
-    deps:[
+
+    urlArgs: 'bust=' + (new Date()).getTime()
+});
+
+require([
     'models/models',
     'views/header',
     'views/about',
@@ -27,14 +30,7 @@ requirejs.config({
     'views/winedetails',
     'views/paginator',
     'utils', 
-    'bootstrap', 
     'memorystore'
-    ]
-
-    , urlArgs: 'bust=' + (new Date()).getTime()
-});
-
-require([
 ], function() {
 
 
